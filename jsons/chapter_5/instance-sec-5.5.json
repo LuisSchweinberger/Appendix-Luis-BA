@@ -1,0 +1,18 @@
+{
+  "submodel": {
+    "kind": "Instance",
+    "idShort": "ProductInfo",
+    "submodelElements": [
+      {
+        "modelType": "Property",
+        "idShort": "ProductName",
+        "value": "FooBar Pro Max"
+      },
+      {
+        "modelType": "Property",
+        "idShort": "ProductDescription",
+        "value": ""
+      }
+    ]
+  }
+}

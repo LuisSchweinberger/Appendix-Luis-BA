@@ -1,0 +1,60 @@
+{
+  "submodel": {
+    "kind": "Template",
+    "idShort": "VehicleSpecs",
+    "submodelElements": [
+          {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "BatteryInfo",
+            "value": [
+              {
+                "modelType": "Property",
+                "idShort": "CapacityKWh",
+                "valueType": "xs:int",
+                "value": "",
+                "qualifiers": [
+                  {
+                    "kind": "TemplateQualifier",
+                    "type": "SMT/MappingInfo",
+                    "value": "car.battery.capacityKWh"
+                  }
+                ]
+              }
+            ],
+            "qualifiers": [
+              {
+                "kind": "TemplateQualifier",
+                "type": "SMT/FilterMappingInfo",
+                "value": "car.engineType = 'electric'"
+              }
+           ]
+          },
+          {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "GasTankInfo",
+            "value": [
+              {
+                "modelType": "Property",
+                "idShort": "CapacityL",
+                "valueType": "xs:int",
+                "value": "",
+                "qualifiers": [
+                  {
+                    "kind": "TemplateQualifier",
+                    "type": "SMT/MappingInfo",
+                    "value": "car.gasTank.capacityL"
+                  }
+                ]
+              }
+            ],
+            "qualifiers": [
+              {
+                "kind": "TemplateQualifier",
+                "type": "SMT/FilterMappingInfo",
+                "value": "car.engineType = 'combustion'"
+              }
+           ]
+          }
+        ]
+  }
+}

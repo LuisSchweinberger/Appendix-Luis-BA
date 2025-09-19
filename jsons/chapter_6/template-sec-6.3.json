@@ -1,0 +1,83 @@
+{
+    "modelType": "Submodel",
+    "kind": "Template",
+    "idShort": "NestedListTemplate",
+    "submodelElements": [
+        {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "contacts",
+            "qualifiers": [],
+            "value": [
+                {
+                    "modelType": "SubmodelElementCollection",
+                    "idShort": "contact",
+                    "qualifiers": [
+                        {
+                            "kind": "TemplateQualifier",
+                            "type": "SMT/CollectionMappingInfo",
+                            "value": "data.contacts[*]"
+                        }
+                    ],
+                    "value": [
+                        {
+                            "modelType": "Property",
+                            "idShort": "Name",
+                            "value": "",
+                            "qualifiers": [
+                                {
+                                    "kind": "TemplateQualifier",
+                                    "type": "SMT/MappingInfo",
+                                    "value": "data.contacts[*].name"
+                                }
+                            ]
+                        },
+                        {
+                            "modelType": "SubmodelElementCollection",
+                            "idShort": "phoneNumbers",
+                            "qualifiers": [],
+                            "value": [
+                                {
+                                    "modelType": "SubmodelElementCollection",
+                                    "idShort": "phoneNumber",
+                                    "qualifiers": [
+                                        {
+                                            "kind": "TemplateQualifier",
+                                            "type": "SMT/CollectionMappingInfo",
+                                            "value": "data.contacts[*].phone_numbers[*]"
+                                        }
+                                    ],
+                                    "value": [
+                                        {
+                                            "modelType": "Property",
+                                            "idShort": "Name",
+                                            "value": "",
+                                            "qualifiers": [
+                                                {
+                                                    "kind": "TemplateQualifier",
+                                                    "type": "SMT/MappingInfo",
+                                                    "value": "data.contacts[*].phone_numbers[*].name"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "modelType": "Property",
+                                            "idShort": "Value",
+                                            "value": "",
+                                            "qualifiers": [
+                                                {
+                                                    "kind": "TemplateQualifier",
+                                                    "type": "SMT/MappingInfo",
+                                                    "value": "data.contacts[*].phone_numbers[*].value"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

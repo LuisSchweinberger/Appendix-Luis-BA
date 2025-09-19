@@ -1,0 +1,19 @@
+{
+  "submodel": {
+    "kind": "Instance",
+    "idShort": "VehicleSpecs",
+    "submodelElements": [
+          {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "BatteryInfo",
+            "value": [
+              { 
+                "modelType": "Property", 
+                "idShort": "CapacityKWh", 
+                "value": 90 
+              }
+            ]
+          }
+        ]
+  }
+}

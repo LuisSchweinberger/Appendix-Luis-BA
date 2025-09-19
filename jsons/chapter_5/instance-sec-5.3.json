@@ -1,0 +1,46 @@
+{
+  "submodel": {
+    "kind": "Instance",
+    "idShort": "Contacts",
+    "submodelElements": [
+      {
+        "modelType": "SubmodelElementCollection",
+        "idShort": "contacts",
+        "value": [
+          {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "contactPerson_0",
+            "value": [
+              { 
+                "modelType": "Property",
+                "idShort": "Name",
+                "value": "Joe"  
+              },
+              { 
+                "modelType": "Property", 
+                "idShort": "Email",
+                "value": "joe@doe.com" 
+              }
+            ]
+          },
+          {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "contactPerson_1",
+            "value": [
+              { 
+                "modelType": "Property", 
+                "idShort": "Name",  
+                "value": "Jane" 
+              },
+              { 
+                "modelType": "Property", 
+                "idShort": "Email",
+                "value": "jane@doe.com" 
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

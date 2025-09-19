@@ -1,0 +1,1 @@
+In diesem Ordner befinden sich die JSON-Dateien für die in Kapitel 5 in Kurzform dargestellten Submodels. Die Dateien sind nach dem folgenden Schema bennant: `<Nr> <Titel>.json`, z.B. `5.1 Default-Werte -- Template-Submodel`.

@@ -1,0 +1,18 @@
+{
+  "sourceData": {
+    "contactPersons": [
+      {
+        "name": "SpongeBob",
+        "email": "s.squarepants@crusty-crab.com"
+      },
+      {
+        "name": "Squidward",
+        "email": "s.tentacles@crusty-crab.com"
+      },
+      {
+        "name": "Eugene",
+        "email": "e.crabs@crusty-crab.com"
+      }
+    ]
+  }
+}

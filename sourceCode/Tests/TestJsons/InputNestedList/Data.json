@@ -1,0 +1,55 @@
+{
+  "sourceData": {
+    "contactPersons": [
+      {
+        "name": "SpongeBob",
+        "email": "s.squarepants@crusty-crab.com",
+        "phone_numbers": [
+          {
+            "name": "Office",
+            "value": "+1 234 56789",
+            "hasMailbox": true
+          }
+        ]
+      },
+      {
+        "name": "Squidward",
+        "email": "s.tentacles@crusty-crab.com",
+        "phone_numbers": [
+          {
+            "name": "Office",
+            "value": "+2 234 56789",
+            "hasMailbox": true
+          },
+          {
+            "name": "Cell",
+            "value": "+2 1907 1234",
+            "hasMailbox": true
+          },
+          {
+            "name": "Home",
+            "value": "+2 69420 187",
+            "hasMailbox": false
+          }
+        ]
+      },
+      {
+        "name": "Eugene",
+        "email": "e.crabs@crusty-crab.com",
+        "phone_numbers": [
+          {
+            "name": "Office",
+            "value": "+3 234 56789",
+            "hasMailbox": true
+          },
+          {
+            "name": "Cell",
+            "value": "+3 1907 1234",
+            "hasMailbox": true
+          }
+        ]
+      }
+    ],
+    "SerialNo": "123456"
+  }
+}

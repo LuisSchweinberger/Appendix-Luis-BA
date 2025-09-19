@@ -1,0 +1,51 @@
+{
+  "submodel": {
+    "kind": "Template",
+    "idShort": "Contacts",
+    "submodelElements": [
+      {
+        "modelType": "SubmodelElementCollection",
+        "idShort": "contacts",
+        "value": [
+          {
+            "modelType": "SubmodelElementCollection",
+            "idShort": "contactPerson",
+            "qualifiers": [
+              {
+                "kind": "TemplateQualifier",
+                "type": "SMT/CollectionMappingInfo",
+                "value": "car.contacts[*]"
+              }
+            ],
+            "value": [
+              {
+                "modelType": "Property",
+                "idShort": "Name",
+                "value": "",
+                "qualifiers": [
+                  {
+                    "kind": "TemplateQualifier",
+                    "type": "SMT/MappingInfo",
+                    "value": "car.contacts[*].name"
+                  }
+                ]
+              },
+              {
+                "modelType": "Property",
+                "idShort": "Email",
+                "value": "",
+                "qualifiers": [
+                  {
+                    "kind": "TemplateQualifier",
+                    "type": "SMT/MappingInfo",
+                    "value": "car.contacts[*].email"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

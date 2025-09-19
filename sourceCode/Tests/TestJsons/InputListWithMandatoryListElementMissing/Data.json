@@ -1,0 +1,31 @@
+{
+  "sourceData": {
+    "contactPersons": [
+      {
+        "name": "SpongeBob",
+        "email": "s.squarepants@crusty-crab.com"
+      },
+      {
+        "email": "s.tentacles@crusty-crab.com"
+      },
+      {
+        "name": "Eugene",
+        "email": "e.crabs@crusty-crab.com"
+      }
+    ],
+    "pets": [
+      {
+        "name": "Gary",
+        "typeOfAnimal": "Snail"
+      },
+      {
+        "name": "Clamu",
+        "typeOfAnimal": "Clam"
+      },
+      {
+        "name": "Mystery",
+        "typeOfAnimal": "Seahorse"
+      }
+    ]
+  }
+}

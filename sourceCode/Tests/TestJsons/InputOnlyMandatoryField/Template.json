@@ -1,0 +1,69 @@
+{
+  "modelType": "Submodel",
+  "kind": "Template",
+  "id": "DemoTemplate_Template_b9b5ce09-9803-4cfd-b72b-424a700838c6",
+  "idShort": "DemoTemplate",
+  "administration": {
+    "version": "1",
+    "revision": "0"
+  },
+  "qualifiers": [
+    {
+      "type": "displayName",
+      "value": "DemoTemplate (Only Mandatory)",
+      "valueType": "xs:string"
+    }
+  ],
+  "submodelElements": [
+    {
+      "modelType": "Property",
+      "idShort": "mandatoryNo",
+      "valueType": "xs:string",
+      "qualifiers": [
+        {
+          "kind": "TemplateQualifier",
+          "type": "SMT/Cardinality",
+          "value": "One",
+          "valueType": "xs:string"
+        },
+        {
+          "kind": "TemplateQualifier",
+          "type": "SMT/MappingInfo",
+          "value": "sourceData.mandatoryNo",
+          "valueType": "xs:string"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Mandatory String Field"
+        }
+      ]
+    },
+    {
+      "modelType": "Property",
+      "idShort": "optionalNo",
+      "valueType": "xs:string",
+      "qualifiers": [
+        {
+          "kind": "TemplateQualifier",
+          "type": "SMT/Cardinality",
+          "value": "ZeroToOne",
+          "valueType": "xs:string"
+        },
+        {
+          "kind": "TemplateQualifier",
+          "type": "SMT/MappingInfo",
+          "value": "sourceData.optionalNo",
+          "valueType": "xs:string"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Optional String Field"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1562 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1745838995893
+  modified: 1745838995893
+  description: ""
+collection:
+  - name: Mnestix Api
+    meta:
+      id: fld_555218e54f7b4bc59905ac451758f496
+      created: 1733837095273
+      modified: 1733998769854
+      sortKey: -1733837116978
+      description: ""
+    children:
+      - name: AasCreator
+        meta:
+          id: fld_6511de1a1e414b70be437ed8429a07de
+          created: 1733837384023
+          modified: 1733837414152
+          sortKey: -1733837393119
+          description: ""
+      - name: AasRelationship
+        meta:
+          id: fld_c3a0e0fe624b449c9904eaeef7909592
+          created: 1733837384027
+          modified: 1733837410928
+          sortKey: -1733837392919
+          description: ""
+      - name: CustomTemplates
+        meta:
+          id: fld_f19ad1fcf1d348f894c067c832f336e6
+          created: 1733837384028
+          modified: 1733837409064
+          sortKey: -1733837392819
+          description: ""
+      - name: DataIngest
+        meta:
+          id: fld_e1e855d27c214f1ab701f451afeb31fd
+          created: 1733837384029
+          modified: 1733837406374
+          sortKey: -1733837392719
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input Mandatory and Optional Field
+            meta:
+              id: req_9877b236ef4c406a88e5f06cf066ea44
+              created: 1733837384038
+              modified: 1757519665874
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384038
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |-
+                {
+                	"language": "de",
+                	"data": {
+                		"sourceData": {
+                  	"mandatoryNo": "18769420"	,
+                			"optionalNo": "123"
+                		}
+                	},
+                	"customTemplateIds": [
+                		"DemoTemplate_Template_b9b5ce09-9803-4cfd-b72b-424a700838c6"
+                	]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input List
+            meta:
+              id: req_b9ce2ed7e54e4014b98918add37d1710
+              created: 1750710326924
+              modified: 1757509856172
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.5
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |
+                {
+                  "language": "en",
+                  "data": {
+                    "sourceData": {
+                      "contactPersons": [
+                        {
+                          "name": "SpongeBob",
+                          "email": "s.squarepants@crusty-crab.com"
+                        },
+                        {
+                          "name": "Squidward",
+                          "email": "s.tentacles@crusty-crab.com"
+                        },
+                        {
+                          "name": "Eugene",
+                          "email": "e.crabs@crusty-crab.com"
+                        }
+                      ],
+                      "pets": [
+                        {
+                          "name": "Gary",
+                          "typeOfAnimal": "Snail"
+                        },
+                        {
+                          "name": "Clamu",
+                          "typeOfAnimal": "Clam"
+                        },
+                        {
+                          "name": "Mystery",
+                          "typeOfAnimal": "Seahorse"
+                        }
+                      ]
+                    }
+                  },
+                  "customTemplateIds": [
+                    "ListTemplate_Template_2ba460fa-09e7-4ad8-a5ca-77f03d109530"
+                  ]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input Nested List
+            meta:
+              id: req_a5b29844ea6344359efaf50ca98bdc31
+              created: 1751620065055
+              modified: 1757321485599
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.25
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: >-
+                {
+                	"language": "en",
+                	"data": {
+                		"sourceData": {
+                			"contactPersons": [
+                				{
+                					"name": "SpongeBob",
+                					"email": "s.squarepants@crusty-crab.com",
+                					"phone_numbers": [
+                						{
+                							"name": "Office",
+                							"value" : "+1 234 56789",
+                							"hasMailbox" : true
+                						}
+                					]
+                				},
+                				{
+                					"name": "Squidward",
+                					"email": "s.tentacles@crusty-crab.com",
+                					"phone_numbers": [
+                						{
+                							"name": "Office",
+                							"value" : "+2 234 56789",
+                							"hasMailbox" : true
+                						},
+                						{
+                							"name": "Cell",
+                							"value" : "+2 1907 1234",
+                							"hasMailbox" : true
+                						},
+                						{
+                							"name": "Home",
+                							"value" : "+2 69420 187",
+                							"hasMailbox" : false
+                						}
+                					]
+                				},
+                				{
+                					"name": "Eugene",
+                					"email": "e.crabs@crusty-crab.com",
+                					"phone_numbers": [
+                						{
+                							"name": "Office",
+                							"value" : "+3 234 56789",
+                							"hasMailbox" : true
+                						},
+                						{
+                							"name": "Cell",
+                							"value" : "+3 1907 1234",
+                							"hasMailbox" : true
+                						}
+                					]
+                				}
+                			],
+                			"SerialNo": "123456"
+                		}
+                	},
+                	"customTemplateIds": [
+                		"NestedListTemplate_Template_bf7e43f3-0ce4-45b1-87b5-5341d4daf7e1"
+                	]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input List with Optional ListElement missing
+            meta:
+              id: req_0305cd80fa43407ba7b1f511014b9a9c
+              created: 1757509194023
+              modified: 1757509946294
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.375
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |
+                {
+                  "language": "en",
+                  "data": {
+                    "sourceData": {
+                      "contactPersons": [
+                        {
+                          "name": "SpongeBob",
+                          "email": "s.squarepants@crusty-crab.com"
+                        },
+                        {
+                          "name": "Squidward"
+                        },
+                        {
+                          "name": "Eugene",
+                          "email": "e.crabs@crusty-crab.com"
+                        }
+                      ],
+                      "pets": [
+                        {
+                          "name": "Gary",
+                          "typeOfAnimal": "Snail"
+                        },
+                        {
+                          "name": "Clamu",
+                          "typeOfAnimal": "Clam"
+                        },
+                        {
+                          "name": "Mystery",
+                          "typeOfAnimal": "Seahorse"
+                        }
+                      ]
+                    }
+                  },
+                  "customTemplateIds": [
+                    "ListTemplate_Template_2ba460fa-09e7-4ad8-a5ca-77f03d109530"
+                  ]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input List with Mandatory ListElement missing
+            meta:
+              id: req_6383e024452943b883e257e5a1c8a51e
+              created: 1757509216809
+              modified: 1757509992096
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.3125
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |
+                {
+                  "language": "en",
+                  "data": {
+                    "sourceData": {
+                      "contactPersons": [
+                        {
+                          "name": "SpongeBob",
+                          "email": "s.squarepants@crusty-crab.com"
+                        },
+                        {
+                          "email": "s.tentacles@crusty-crab.com"
+                        },
+                        {
+                          "name": "Eugene",
+                          "email": "e.crabs@crusty-crab.com"
+                        }
+                      ],
+                      "pets": [
+                        {
+                          "name": "Gary",
+                          "typeOfAnimal": "Snail"
+                        },
+                        {
+                          "name": "Clamu",
+                          "typeOfAnimal": "Clam"
+                        },
+                        {
+                          "name": "Mystery",
+                          "typeOfAnimal": "Seahorse"
+                        }
+                      ]
+                    }
+                  },
+                  "customTemplateIds": [
+                    "ListTemplate_Template_2ba460fa-09e7-4ad8-a5ca-77f03d109530"
+                  ]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input List with Optional List Missing
+            meta:
+              id: req_6fda6b2e4b0e42849d3d2fa2a46769d5
+              created: 1757509250811
+              modified: 1757510041948
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.2812
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |
+                {
+                  "language": "en",
+                  "data": {
+                    "sourceData": {
+                      "contactPersons": [
+                        {
+                          "name": "SpongeBob",
+                          "email": "s.squarepants@crusty-crab.com"
+                        },
+                        {
+                          "name": "Squidward",
+                          "email": "s.tentacles@crusty-crab.com"
+                        },
+                        {
+                          "name": "Eugene",
+                          "email": "e.crabs@crusty-crab.com"
+                        }
+                      ]
+                      
+                    }
+                  },
+                  "customTemplateIds": [
+                    "ListTemplate_Template_2ba460fa-09e7-4ad8-a5ca-77f03d109530"
+                  ]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input List with Mandatory List Missing
+            meta:
+              id: req_bc9c0dccef4e44518f902f4cee63424b
+              created: 1757509887064
+              modified: 1757517145446
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.2656
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |
+                {
+                  "language": "en",
+                  "data": {
+                    "sourceData": {
+                      "pets": [
+                        {
+                          "name": "Gary",
+                          "typeOfAnimal": "Snail"
+                        },
+                        {
+                          "name": "Clamu",
+                          "typeOfAnimal": "Clam"
+                        },
+                        {
+                          "name": "Mystery",
+                          "typeOfAnimal": "Seahorse"
+                        }
+                      ]
+                    }
+                  },
+                  "customTemplateIds": [
+                    "ListTemplate_Template_2ba460fa-09e7-4ad8-a5ca-77f03d109530"
+                  ]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input Only Mandatory Field
+            meta:
+              id: req_4dfbd16fe3114a6e8124c1964c14a931
+              created: 1757519685076
+              modified: 1757519699743
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.75
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |-
+                {
+                	"language": "de",
+                	"data": {
+                		"sourceData": {
+                  	"mandatoryNo": "18769420"	
+                		}
+                	},
+                	"customTemplateIds": [
+                		"DemoTemplate_Template_b9b5ce09-9803-4cfd-b72b-424a700838c6"
+                	]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input Only Optional Field
+            meta:
+              id: req_6d973135788445d0b187f7ccf70b6c66
+              created: 1757519691192
+              modified: 1757519703572
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.625
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |-
+                {
+                	"language": "de",
+                	"data": {
+                		"sourceData": {
+                			"optionalNo": "123"
+                		}
+                	},
+                	"customTemplateIds": [
+                		"DemoTemplate_Template_b9b5ce09-9803-4cfd-b72b-424a700838c6"
+                	]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DataIngest/{% request 'parameter',
+              'base64EncodedAasId', 0 %}"
+            name: Input BA Nested List
+            meta:
+              id: req_41bf6e7b6b49407886a30b19559a2e0d
+              created: 1757968583276
+              modified: 1757968794590
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384037.125
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: >-
+                {
+                	"language": "en",
+                	"data": {
+                		"data": {
+                			"contacts": [
+                				{
+                					"name": "SpongeBob",
+                					"phone_numbers": [
+                						{
+                							"name": "Office",
+                							"value": "+1 234 56789"
+                						},
+                						{
+                							"name": "Cell",
+                							"value": "+1 1907 1234"
+                						}
+                					]
+                				},
+                				{
+                					"name": "Squidward",
+                					"phone_numbers": [
+                						{
+                							"name": "Office",
+                							"value": "+2 234 56789"
+                						},
+                						{
+                							"name": "Home",
+                							"value": "+2 69420 187"
+                						},
+                						{
+                							"name": "Cell",
+                							"value": "+2 1907 1234"
+                						}
+                					]
+                				}
+                			]
+                		}
+                	},
+                	"customTemplateIds": [
+                		"NestedListTemplate_Template_1cf24cf0-ae79-4d5c-a0b3-2bc6bfded4c1"
+                	]
+                }
+            parameters:
+              - id: pair_bb4aafb9b0c941fca214e31c691fa673
+                name: base64EncodedAasId
+                value: "{% base64 'encode', 'url', 'https://aas2.uni-h.de/aas/lni0729' %}"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+                id: pair_053587c94b5443699eae401434386f88
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+                id: pair_f2ed64e81fa94661a471cf21671d1ad5
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: DefaultTemplates
+        meta:
+          id: fld_f088247162134b4684bf1fe2b98b1854
+          created: 1733837384030
+          modified: 1733837395553
+          sortKey: -1733837392619
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/api/DefaultTemplates"
+            name: Create Mandatory/Optional Template
+            meta:
+              id: req_ff1d1fbeff41428ba636e3b4715d1184
+              created: 1733837384040
+              modified: 1757508935239
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384040
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |-
+                {
+                	"modelType": "Submodel",
+                	"kind": "Template",
+                	"id": "urn:smtemplate:DemoTemplate",
+                	"idShort": "DemoTemplate",
+                	"administration": {
+                		"version": "1",
+                		"revision": "0"
+                	},
+                	"qualifiers": [
+                		{
+                			"type": "displayName",
+                			"value": "DemoTemplate (Mandatory And Optional)",
+                			"valueType": "xs:string"
+                		}
+                	],
+                	"submodelElements": [
+                		{
+                			"modelType": "Property",
+                			"idShort": "mandatoryNo",
+                			"valueType": "xs:string",
+                			"value": "",
+                			"qualifiers": [
+                				{
+                					"kind": "TemplateQualifier",
+                					"type": "SMT/Cardinality",
+                					"value": "One",
+                					"valueType": "xs:string"
+                				},
+                				{
+                					"kind": "TemplateQualifier",
+                					"type": "SMT/MappingInfo",
+                					"value": "sourceData.mandatoryNo",
+                					"valueType": "xs:string"
+                				}
+                			],
+                			"description": [
+                				{
+                					"language": "en",
+                					"text": "Mandatory String Field"
+                				}
+                			]
+                		},
+                		{
+                			"modelType": "Property",
+                			"idShort": "optionalNo",
+                			"valueType": "xs:string",
+                			"value": "",
+                			"qualifiers": [
+                				{
+                					"kind": "TemplateQualifier",
+                					"type": "SMT/Cardinality",
+                					"value": "ZeroToOne",
+                					"valueType": "xs:string"
+                				},
+                				{
+                					"kind": "TemplateQualifier",
+                					"type": "SMT/MappingInfo",
+                					"value": "sourceData.optionalNo",
+                					"valueType": "xs:string"
+                				}
+                			],
+                			"description": [
+                				{
+                					"language": "en",
+                					"text": "Optional Field"
+                				}
+                			]
+                		}
+                	]
+                }
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/Template/AllDefaultSubmodels"
+            name: Get all default Templates
+            meta:
+              id: req_521f89ef395041f9894eb65c39923565
+              created: 1748265585949
+              modified: 1748269365633
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384039
+            method: GET
+            headers:
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DefaultTemplates"
+            name: Create Mandatory / Optional List Template
+            meta:
+              id: req_b04648322c134963b8035951231f1e67
+              created: 1750076752169
+              modified: 1757509697519
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384039.5
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |-
+                {
+                	"modelType": "Submodel",
+                	"kind": "Template",
+                	"id": "urn:smtemplate:ListTemplate1",
+                	"idShort": "ListTemplate",
+                	"semanticId": {
+                		"keys": [
+                			{
+                				"type": "Submodel",
+                				"value": "https://example.com/DemoTemplate/1/0"
+                			}
+                		],
+                		"type": "ExternalReference"
+                	},
+                	"administration": {
+                		"version": "1",
+                		"revision": "0"
+                	},
+                	"qualifiers": [
+                		{
+                			"type": "displayName",
+                			"value": "DemoTemplate (Mandatory/OptionalList)",
+                			"valueType": "xs:string"
+                		}
+                	],
+                	"submodelElements": [
+                		{
+                			"modelType": "SubmodelElementCollection",
+                			"idShort": "ContactPersons",
+                			"value": [
+                				{
+                					"modelType": "SubmodelElementCollection",
+                					"idShort": "contactPerson",
+                					"valueType": "xs:string",
+                					"value": [
+                						{
+                							"modelType": "Property",
+                							"idShort": "Name",
+                							"valueType": "xs:string",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/Cardinality",
+                									"value": "One",
+                									"valueType": "xs:string"
+                								},
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "sourceData.contactPersons[*].name",
+                									"valueType": "xs:string"
+                								}
+                							],
+                							"description": [
+                								{
+                									"language": "en",
+                									"text": "Name of the Contact Person (Mandatory)"
+                								}
+                							]
+                						},
+                						{
+                							"modelType": "Property",
+                							"idShort": "Email",
+                							"valueType": "xs:string",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/Cardinality",
+                									"value": "ZeroToOne",
+                									"valueType": "xs:string"
+                								},
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "sourceData.contactPersons[*].email",
+                									"valueType": "xs:string"
+                								}
+                							],
+                							"description": [
+                								{
+                									"language": "en",
+                									"text": "Email of the Contact Person (Optional)"
+                								}
+                							]
+                						}
+                					],
+                					"qualifiers": [
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/Cardinality",
+                							"value": "One",
+                							"valueType": "xs:string"
+                						},
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/CollectionMappingInfo",
+                							"value": "sourceData.contactPersons[*]",
+                							"valueType": "xs:string"
+                						}
+                					],
+                					"description": [
+                						{
+                							"language": "en",
+                							"text": "One Contact Person (Mandatory)"
+                						}
+                					]
+                				}
+                			],
+                			"valueType": "xs:string",
+                			"qualifiers": [
+                			],
+                			"description": [
+                				{
+                					"language": "en",
+                					"text": "Simple list of Persons for that Object"
+                				}
+                			]
+                		},
+                		{
+                			"modelType": "SubmodelElementCollection",
+                			"idShort": "Pets",
+                			"value": [
+                				{
+                					"modelType": "SubmodelElementCollection",
+                					"idShort": "pet",
+                					"valueType": "xs:string",
+                					"value": [
+                						{
+                							"modelType": "Property",
+                							"idShort": "Name",
+                							"valueType": "xs:string",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/Cardinality",
+                									"value": "One",
+                									"valueType": "xs:string"
+                								},
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "sourceData.pets[*].name",
+                									"valueType": "xs:string"
+                								}
+                							],
+                							"description": [
+                								{
+                									"language": "en",
+                									"text": "Name of the Pet"
+                								}
+                							]
+                						},
+                						{
+                							"modelType": "Property",
+                							"idShort": "TypeOfAnimal",
+                							"valueType": "xs:string",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/Cardinality",
+                									"value": "One",
+                									"valueType": "xs:string"
+                								},
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "sourceData.pets[*].typeOfAnimal",
+                									"valueType": "xs:string"
+                								}
+                							],
+                							"description": [
+                								{
+                									"language": "en",
+                									"text": "Type of Animal"
+                								}
+                							]
+                						}
+                					],
+                					"qualifiers": [
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/Cardinality",
+                							"value": "ZeroToOne",
+                							"valueType": "xs:string"
+                						},
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/CollectionMappingInfo",
+                							"value": "sourceData.pets[*]",
+                							"valueType": "xs:string"
+                						}
+                					],
+                					"description": [
+                						{
+                							"language": "en",
+                							"text": "One Pet (Optional)"
+                						}
+                					]
+                				}
+                			],
+                			"valueType": "xs:string",
+                			"qualifiers": [
+                			],
+                			"description": [
+                				{
+                					"language": "en",
+                					"text": "Simple list of Pets (Optional)"
+                				}
+                			]
+                		}
+
+                	]
+                }
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DefaultTemplates"
+            name: Create Nested List Template
+            meta:
+              id: req_eaef8c8a22f943c09ac39d41f620825f
+              created: 1751620211102
+              modified: 1751620910192
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384039.25
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: >-
+                {
+                	"modelType": "Submodel",
+                	"kind": "Template",
+                	"id": "urn:smtemplate:NestedListTemplate",
+                	"idShort": "NestedListTemplate",
+                	"semanticId": {
+                		"keys": [
+                			{
+                				"type": "Submodel",
+                				"value": "https://example.com/DemoTemplate/1/1"
+                			}
+                		],
+                		"type": "ExternalReference"
+                	},
+                	"administration": {
+                		"version": "1",
+                		"revision": "1"
+                	},
+                	"qualifiers": [
+                		{
+                			"type": "displayName",
+                			"value": "DemoTemplate (ContactPersonList + PhoneNumbers)",
+                			"valueType": "xs:string"
+                		}
+                	],
+                	"submodelElements": [
+                		{
+                			"modelType": "SubmodelElementCollection",
+                			"idShort": "ContactPersons",
+                			"valueType": "xs:string",
+                			"qualifiers": [],
+                			"value": [
+                				{
+                					"modelType": "SubmodelElementCollection",
+                					"idShort": "contactPerson",
+                					"valueType": "xs:string",
+                					"qualifiers": [
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/Cardinality",
+                							"value": "One",
+                							"valueType": "xs:string"
+                						},
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/CollectionMappingInfo",
+                							"value": "sourceData.contactPersons[*]",
+                							"valueType": "xs:string"
+                						}
+                					],
+                					"value": [
+                						{
+                							"modelType": "Property",
+                							"idShort": "Name",
+                							"valueType": "xs:string",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/Cardinality",
+                									"value": "One",
+                									"valueType": "xs:string"
+                								},
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "sourceData.contactPersons[*].name",
+                									"valueType": "xs:string"
+                								}
+                							]
+                						},
+                						{
+                							"modelType": "Property",
+                							"idShort": "Email",
+                							"valueType": "xs:string",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/Cardinality",
+                									"value": "One",
+                									"valueType": "xs:string"
+                								},
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "sourceData.contactPersons[*].email",
+                									"valueType": "xs:string"
+                								}
+                							]
+                						},
+                						{
+                							"modelType": "SubmodelElementCollection",
+                							"idShort": "PhoneNumbers",
+                							"valueType": "xs:string",
+                							"qualifiers": [],
+                							"value": [
+                								{
+                									"modelType": "SubmodelElementCollection",
+                									"idShort": "phoneNumber",
+                									"valueType": "xs:string",
+                									"qualifiers": [
+                										{
+                											"kind": "TemplateQualifier",
+                											"type": "SMT/Cardinality",
+                											"value": "One",
+                											"valueType": "xs:string"
+                										},
+                										{
+                											"kind": "TemplateQualifier",
+                											"type": "SMT/CollectionMappingInfo",
+                											"value": "sourceData.contactPersons[*].phone_numbers[*]",
+                											"valueType": "xs:string"
+                										}
+                									],
+                									"value": [
+                										{
+                											"modelType": "Property",
+                											"idShort": "Name",
+                											"valueType": "xs:string",
+                											"value": "",
+                											"qualifiers": [
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/Cardinality",
+                													"value": "One",
+                													"valueType": "xs:string"
+                												},
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/MappingInfo",
+                													"value": "sourceData.contactPersons[*].phone_numbers[*].name",
+                													"valueType": "xs:string"
+                												}
+                											]
+                										},
+                										{
+                											"modelType": "Property",
+                											"idShort": "Value",
+                											"valueType": "xs:string",
+                											"value": "",
+                											"qualifiers": [
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/Cardinality",
+                													"value": "One",
+                													"valueType": "xs:string"
+                												},
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/MappingInfo",
+                													"value": "sourceData.contactPersons[*].phone_numbers[*].value",
+                													"valueType": "xs:string"
+                												}
+                											]
+                										},
+                										{
+                											"modelType": "Property",
+                											"idShort": "HasMailbox",
+                											"valueType": "xs:boolean",
+                											"value": "",
+                											"qualifiers": [
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/Cardinality",
+                													"value": "One",
+                													"valueType": "xs:string"
+                												},
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/MappingInfo",
+                													"value": "sourceData.contactPersons[*].phone_numbers[*].hasMailbox",
+                													"valueType": "xs:string"
+                												}
+                											]
+                										}
+                									]
+                								}
+                							]
+                						}
+                					]
+                				}
+                			]
+                		}
+                	]
+                }
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/api/DefaultTemplates"
+            name: BA-Template
+            meta:
+              id: req_1c211cf801614dfe90903512a3182acb
+              created: 1757968517442
+              modified: 1757968540326
+              isPrivate: false
+              description: ""
+              sortKey: -1733837384039.125
+            method: POST
+            body:
+              mimeType: application/json-patch+json
+              text: |-
+                {
+                	"modelType": "Submodel",
+                	"kind": "Template",
+                    "idShort": "NestedListTemplate",
+                	"id": "nestedListExample",
+                	"submodelElements": [
+                		{
+                			"modelType": "SubmodelElementCollection",
+                			"idShort": "contacts",
+                			"qualifiers": [],
+                			"value": [
+                				{
+                					"modelType": "SubmodelElementCollection",
+                					"idShort": "contact",
+                					"qualifiers": [
+                						{
+                							"kind": "TemplateQualifier",
+                							"type": "SMT/CollectionMappingInfo",
+                							"value": "data.contacts[*]"
+                						}
+                					],
+                					"value": [
+                						{
+                							"modelType": "Property",
+                							"idShort": "Name",
+                							"value": "",
+                							"qualifiers": [
+                								{
+                									"kind": "TemplateQualifier",
+                									"type": "SMT/MappingInfo",
+                									"value": "data.contacts[*].name"
+                								}
+                							]
+                						},
+                						{
+                							"modelType": "SubmodelElementCollection",
+                							"idShort": "phoneNumbers",
+                							"qualifiers": [],
+                							"value": [
+                								{
+                									"modelType": "SubmodelElementCollection",
+                									"idShort": "phoneNumber",
+                									"qualifiers": [
+                										{
+                											"kind": "TemplateQualifier",
+                											"type": "SMT/CollectionMappingInfo",
+                											"value": "data.contacts[*].phone_numbers[*]"
+                										}
+                									],
+                									"value": [
+                										{
+                											"modelType": "Property",
+                											"idShort": "Name",
+                											"value": "",
+                											"qualifiers": [
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/MappingInfo",
+                													"value": "data.contacts[*].phone_numbers[*].name"
+                												}
+                											]
+                										},
+                										{
+                											"modelType": "Property",
+                											"idShort": "Value",
+                											"value": "",
+                											"qualifiers": [
+                												{
+                													"kind": "TemplateQualifier",
+                													"type": "SMT/MappingInfo",
+                													"value": "data.contacts[*].phone_numbers[*].value"
+                												}
+                											]
+                										}
+                									]
+                								}
+                							]
+                						}
+                					]
+                				}
+                			]
+                		}
+                	]
+                }
+            headers:
+              - name: Content-Type
+                disabled: false
+                value: application/json-patch+json
+              - name: ApiKey
+                disabled: false
+                value: "{{ _.api_key }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: IdGenerator
+        meta:
+          id: fld_b030c9756ca249528adcef4dc5f37185
+          created: 1733837384031
+          modified: 1748253782549
+          sortKey: -1733837392519
+          description: ""
+    environment:
+      base_url: http://localhost:5064
+    environmentPropertyOrder:
+      "&":
+        - base_url
+  - name: AAS Environment - Basyx
+    meta:
+      id: fld_8ec53dbb9d04425d9b0ba564cedfac73
+      created: 1733837105629
+      modified: 1733998779760
+      sortKey: -1733837116928
+      description: ""
+    children:
+      - name: Registry and Discovery Interface
+        meta:
+          id: fld_defbed289d2f4fdea577c667b4b59d6e
+          created: 1733838557309
+          modified: 1733838627346
+          sortKey: -1733838627236
+          description: the Registry and Discovery Interface API
+      - name: Submodel Repository API
+        meta:
+          id: fld_0eb4580bb2f447b2a3946ff7e9ccde3b
+          created: 1733838760987
+          modified: 1734010761477
+          sortKey: -1733839066530
+          description: ""
+        environment:
+          submodelIdentifier: "-"
+          idShortPath: "-"
+        environmentPropertyOrder:
+          "&":
+            - submodelIdentifier
+            - idShortPath
+      - name: Asset Administration Shell Repository API
+        meta:
+          id: fld_956de626ea54449cb8d47804aae2bf44
+          created: 1733838906540
+          modified: 1734010755339
+          sortKey: -1733839066580
+          description: ""
+        environment:
+          aasId: "-"
+        environmentPropertyOrder:
+          "&":
+            - aasId
+      - name: Concept Description Repository API
+        meta:
+          id: fld_d99e4ace54b94af69cd60d2e2e3490e9
+          created: 1733838994805
+          modified: 1733838994805
+          sortKey: -1733838994805
+          description: ""
+      - name: Serialization API
+        meta:
+          id: fld_3f41d2a2702545d19cc4ab17bfde89f3
+          created: 1733839066480
+          modified: 1733839066480
+          sortKey: -1733839066480
+          description: ""
+      - name: Environment API
+        meta:
+          id: fld_0b41ac38b9b74cf6ac4ca6f54626fb06
+          created: 1733839091261
+          modified: 1733839101240
+          sortKey: -1733838628186
+          description: ""
+    environment:
+      base_url: http://localhost:5064/repo
+    environmentPropertyOrder:
+      "&":
+        - base_url
+  - name: Discovery Service - Basyx
+    meta:
+      id: fld_14820058778d4f71919f6424bdd65fb8
+      created: 1733837116878
+      modified: 1745848314498
+      sortKey: -1733837116915.5
+      description: ""
+    children:
+      - name: Registry and Discovery Interface
+        meta:
+          id: fld_681d12f7ab784c92b4237141107246a7
+          created: 1733903798705
+          modified: 1733903892905
+          sortKey: -1733903810116
+          description: the Registry and Discovery Interface API
+    environment:
+      base_url: http://localhost:5064/discovery
+      aasIdentifier: "-"
+    environmentPropertyOrder:
+      "&":
+        - base_url
+        - aasIdentifier
+  - name: AAS Registry - Basyx
+    meta:
+      id: fld_9fdb12782a64436488808bcaa67df24c
+      created: 1733911934733
+      modified: 1734010791285
+      sortKey: -1733837116913.9375
+      description: the Registry and Discovery Interface API
+    environment:
+      base_url: http://localhost:8083
+      aasIdentifier: "-"
+      submodelIdentifier: "-"
+    environmentPropertyOrder:
+      "&":
+        - base_url
+        - aasIdentifier
+        - submodelIdentifier
+  - name: Submodel Registry - Basyx
+    meta:
+      id: fld_8bf2e88a536e4f7b9a4f4cba19d998a0
+      created: 1733913415638
+      modified: 1745848316328
+      sortKey: -1733837116911.5938
+      description: the Submodel Registry API
+    environment:
+      base_url: http://localhost:8084
+      submodelIdentifier: "-"
+    environmentPropertyOrder:
+      "&":
+        - base_url
+        - submodelIdentifier
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1745839019712
+    modified: 1745839019712
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1745839019676
+    modified: 1745839019676
+    isPrivate: false
+  subEnvironments:
+    - name: Mnestix Environment
+      meta:
+        id: env_7a24837410c241de8ae836f2e07572be
+        created: 1733998057079
+        modified: 1750911766103
+        isPrivate: false
+        sortKey: 1733998057079
+      data:
+        api_key: 9FB8BCDFAEE81367A1668E16BDC37
+      color: "#005962"

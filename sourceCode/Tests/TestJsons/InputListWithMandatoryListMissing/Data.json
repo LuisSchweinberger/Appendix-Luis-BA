@@ -1,0 +1,18 @@
+{
+  "sourceData": {
+    "pets": [
+      {
+        "name": "Gary",
+        "typeOfAnimal": "Snail"
+      },
+      {
+        "name": "Clamu",
+        "typeOfAnimal": "Clam"
+      },
+      {
+        "name": "Mystery",
+        "typeOfAnimal": "Seahorse"
+      }
+    ]
+  }
+}

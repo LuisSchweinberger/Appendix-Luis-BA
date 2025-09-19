@@ -1,0 +1,43 @@
+{
+  "submodel": {
+    "kind": "Template",
+    "idShort": "ProductInfo",
+    "submodelElements": [
+      {
+        "modelType": "Property",
+        "idShort": "ProductName",
+        "value": "",
+        "qualifiers": [
+          {
+            "kind": "TemplateQualifier",
+            "type": "SMT/MappingInfo",
+            "value": "product.name"
+          },
+          {
+            "kind": "TemplateQualifier",
+            "type": "SMT/Cardinality",
+            "value": "One"
+          }
+        ]
+      },
+      {
+        "modelType": "Property",
+        "idShort": "ProductDescription",
+        "value": "",
+        "qualifiers": [
+          {
+            "kind": "TemplateQualifier",
+            "type": "SMT/MappingInfo",
+            "value": "product.description"
+          },
+          {
+            "kind": "TemplateQualifier",
+            "type": "SMT/Cardinality",
+            "value": "ZeroToOne"
+          }
+        ]
+      }
+      
+    ]
+  }
+}

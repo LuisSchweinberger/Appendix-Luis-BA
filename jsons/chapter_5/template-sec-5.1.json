@@ -1,0 +1,13 @@
+{
+  "submodel": {
+    "kind": "Template",
+    "idShort": "ManufacturerInfo",
+    "submodelElements": [
+      {
+        "modelType": "Property",
+        "idShort": "Manufacturer",
+        "value": "XITASO GmbH"
+      }
+    ]
+  }
+}

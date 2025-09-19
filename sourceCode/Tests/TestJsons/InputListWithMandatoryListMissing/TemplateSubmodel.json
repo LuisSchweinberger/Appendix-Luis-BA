@@ -1,0 +1,214 @@
+{
+  "modelType": "Submodel",
+  "kind": "Template",
+  "id": "urn:smtemplate:ListTemplate1",
+  "idShort": "ListTemplate",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "https://example.com/DemoTemplate/1/0"
+      }
+    ],
+    "type": "ExternalReference"
+  },
+  "administration": {
+    "version": "1",
+    "revision": "0"
+  },
+  "qualifiers": [
+    {
+      "type": "displayName",
+      "value": "DemoTemplate (Mandatory/OptionalList)",
+      "valueType": "xs:string"
+    }
+  ],
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "ContactPersons",
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "contactPerson",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[*].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Contact Person (Mandatory)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Email",
+              "valueType": "xs:string",
+              "value": "",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "ZeroToOne",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[*].email",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Email of the Contact Person (Optional)"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "One",
+              "valueType": "xs:string"
+            },
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/CollectionMappingInfo",
+              "value": "sourceData.contactPersons[*]",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Contact Person (Mandatory)"
+            }
+          ]
+        }
+      ],
+      "valueType": "xs:string",
+      "qualifiers": [],
+      "description": [
+        {
+          "language": "en",
+          "text": "Simple list of Persons for that Object"
+        }
+      ]
+    },
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "Pets",
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "pet",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[*].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Pet"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TypeOfAnimal",
+              "valueType": "xs:string",
+              "value": "",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[*].typeOfAnimal",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Type of Animal"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "ZeroToOne",
+              "valueType": "xs:string"
+            },
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/CollectionMappingInfo",
+              "value": "sourceData.pets[*]",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Pet (Optional)"
+            }
+          ]
+        }
+      ],
+      "valueType": "xs:string",
+      "qualifiers": [],
+      "description": [
+        {
+          "language": "en",
+          "text": "Simple list of Pets (Optional)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "car": {
+    "engineType": "electric",
+    "battery": { "capacityKWh": 90 },
+    "gasTank": { "capacityL": 50 }
+  }
+}

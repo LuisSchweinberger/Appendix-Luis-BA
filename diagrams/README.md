@@ -1,0 +1,1 @@
+Die hier abgelegten Diagramme beschreiben die folgenden Aspekte der Rules-Engine:

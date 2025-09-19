@@ -1,0 +1,186 @@
+{
+  "modelType": "Submodel",
+  "kind": "Template",
+  "id": "urn:smtemplate:NestedListTemplate",
+  "idShort": "NestedListTemplate",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "https://example.com/DemoTemplate/1/1"
+      }
+    ],
+    "type": "ExternalReference"
+  },
+  "administration": {
+    "version": "1",
+    "revision": "1"
+  },
+  "qualifiers": [
+    {
+      "type": "displayName",
+      "value": "DemoTemplate (ContactPersonList + PhoneNumbers)",
+      "valueType": "xs:string"
+    }
+  ],
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "ContactPersons",
+      "valueType": "xs:string",
+      "qualifiers": [],
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "contactPerson",
+          "valueType": "xs:string",
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "One",
+              "valueType": "xs:string"
+            },
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/CollectionMappingInfo",
+              "value": "sourceData.contactPersons[*]",
+              "valueType": "xs:string"
+            }
+          ],
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[*].name",
+                  "valueType": "xs:string"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Email",
+              "valueType": "xs:string",
+              "value": "",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[*].email",
+                  "valueType": "xs:string"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "PhoneNumbers",
+              "valueType": "xs:string",
+              "qualifiers": [],
+              "value": [
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "idShort": "phoneNumber",
+                  "valueType": "xs:string",
+                  "qualifiers": [
+                    {
+                      "kind": "TemplateQualifier",
+                      "type": "SMT/Cardinality",
+                      "value": "One",
+                      "valueType": "xs:string"
+                    },
+                    {
+                      "kind": "TemplateQualifier",
+                      "type": "SMT/CollectionMappingInfo",
+                      "value": "sourceData.contactPersons[*].phone_numbers[*]",
+                      "valueType": "xs:string"
+                    }
+                  ],
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "idShort": "Name",
+                      "valueType": "xs:string",
+                      "value": "",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/Cardinality",
+                          "value": "One",
+                          "valueType": "xs:string"
+                        },
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "sourceData.contactPersons[*].phone_numbers[*].name",
+                          "valueType": "xs:string"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "Property",
+                      "idShort": "Value",
+                      "valueType": "xs:string",
+                      "value": "",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/Cardinality",
+                          "value": "One",
+                          "valueType": "xs:string"
+                        },
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "sourceData.contactPersons[*].phone_numbers[*].value",
+                          "valueType": "xs:string"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "Property",
+                      "idShort": "HasMailbox",
+                      "valueType": "xs:boolean",
+                      "value": "",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/Cardinality",
+                          "value": "One",
+                          "valueType": "xs:string"
+                        },
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "sourceData.contactPersons[*].phone_numbers[*].hasMailbox",
+                          "valueType": "xs:string"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+	"language": "en",
+	"data": {
+		"data": {
+			"contacts": [
+				{
+					"name": "SpongeBob",
+					"phone_numbers": [
+						{
+							"name": "Office",
+							"value": "+1 234 56789"
+						},
+						{
+							"name": "Cell",
+							"value": "+1 1907 1234"
+						}
+					]
+				},
+				{
+					"name": "Squidward",
+					"phone_numbers": [
+						{
+							"name": "Office",
+							"value": "+2 234 56789"
+						},
+						{
+							"name": "Home",
+							"value": "+2 69420 187"
+						},
+						{
+							"name": "Cell",
+							"value": "+2 1907 1234"
+						}
+					]
+				}
+			]
+		}
+	},
+	"customTemplateIds": [
+		"NestedListTemplate_Template_1cf24cf0-ae79-4d5c-a0b3-2bc6bfded4c1"
+	]
+}

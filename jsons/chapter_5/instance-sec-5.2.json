@@ -1,0 +1,13 @@
+{
+  "submodel": {
+    "kind": "Instance",
+    "idShort": "Identification",
+    "submodelElements": [
+      {
+        "modelType": "Property",
+        "idShort": "serialNo",
+        "value": "DE-00042"
+      }
+    ]
+  }
+}

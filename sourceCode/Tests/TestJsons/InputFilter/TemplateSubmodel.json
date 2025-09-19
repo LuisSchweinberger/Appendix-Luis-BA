@@ -1,0 +1,84 @@
+{
+  "modelType": "Submodel",
+  "kind": "Template",
+  "idShort": "VehicleSpecs",
+  "id": "VehicleSpecs_Template",
+  "description": [
+    {
+      "language": "en",
+      "text": "Vehicle Specifications Template with Filter Rules"
+    }
+  ],
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "BatteryInfo",
+      "valueType": "xs:string",
+      "qualifiers": [
+        {
+          "kind": "TemplateQualifier",
+          "type": "SMT/FilterMappingInfo",
+          "value": "car.engineType = 'electric'",
+          "valueType": "xs:string"
+        }
+      ],
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "CapacityKWh",
+          "valueType": "xs:integer",
+          "value": "",
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/MappingInfo",
+              "value": "car.battery.capacityKWh",
+              "valueType": "xs:string"
+            }
+          ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Battery information for electric vehicles"
+        }
+      ]
+    },
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "GasTankInfo",
+      "valueType": "xs:string",
+      "qualifiers": [
+        {
+          "kind": "TemplateQualifier",
+          "type": "SMT/FilterMappingInfo",
+          "value": "car.engineType = 'combustion'",
+          "valueType": "xs:string"
+        }
+      ],
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "CapacityL",
+          "valueType": "xs:integer",
+          "value": "",
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/MappingInfo",
+              "value": "car.gasTank.capacityL",
+              "valueType": "xs:string"
+            }
+          ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Gas tank information for combustion vehicles"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "submodel": {
+    "kind": "Template",
+    "idShort": "Identification",
+    "submodelElements": [
+      {
+        "modelType": "Property",
+        "idShort": "serialNo",
+        "value": "",
+        "qualifiers": [
+          {
+            "kind": "TemplateQualifier",
+            "type": "SMT/MappingInfo",
+            "value": "car.serialNo"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "modelType": "Submodel",
+  "kind": "Instance",
+  "idShort": "VehicleSpecs",
+  "id": "VehicleSpecs_Instance",
+  "description": [
+    {
+      "language": "en",
+      "text": "Vehicle Specifications Instance with Filter Rules Applied"
+    }
+  ],
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "BatteryInfo",
+      "valueType": "xs:string",
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "CapacityKWh",
+          "valueType": "xs:integer",
+          "value": "90"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Battery information for electric vehicles"
+        }
+      ]
+    }
+  ]
+}

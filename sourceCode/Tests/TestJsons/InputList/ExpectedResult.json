@@ -1,0 +1,488 @@
+{
+  "modelType": "Submodel",
+  "kind": "Instance",
+  "id": "TheNewSubmodelId",
+  "idShort": "ListTemplate",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "https://example.com/DemoTemplate/1/0"
+      }
+    ],
+    "type": "ExternalReference"
+  },
+  "administration": {
+    "version": "1",
+    "revision": "0"
+  },
+  "qualifiers": [],
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "ContactPersons",
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "contactPerson_0",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "SpongeBob",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[0].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Contact Person (Mandatory)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Email",
+              "valueType": "xs:string",
+              "value": "s.squarepants@crusty-crab.com",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "ZeroToOne",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[0].email",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Email of the Contact Person (Optional)"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "One",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Contact Person (Mandatory)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "contactPerson_1",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "Squidward",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[1].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Contact Person (Mandatory)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Email",
+              "valueType": "xs:string",
+              "value": "s.tentacles@crusty-crab.com",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "ZeroToOne",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[1].email",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Email of the Contact Person (Optional)"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "One",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Contact Person (Mandatory)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "contactPerson_2",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "Eugene",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[2].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Contact Person (Mandatory)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Email",
+              "valueType": "xs:string",
+              "value": "e.crabs@crusty-crab.com",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "ZeroToOne",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.contactPersons[2].email",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Email of the Contact Person (Optional)"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "One",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Contact Person (Mandatory)"
+            }
+          ]
+        }
+      ],
+      "valueType": "xs:string",
+      "qualifiers": [],
+      "description": [
+        {
+          "language": "en",
+          "text": "Simple list of Persons for that Object"
+        }
+      ]
+    },
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "Pets",
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "pet_0",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "Gary",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[0].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Pet"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TypeOfAnimal",
+              "valueType": "xs:string",
+              "value": "Snail",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[0].typeOfAnimal",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Type of Animal"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "ZeroToOne",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Pet (Optional)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "pet_1",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "Clamu",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[1].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Pet"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TypeOfAnimal",
+              "valueType": "xs:string",
+              "value": "Clam",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[1].typeOfAnimal",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Type of Animal"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "ZeroToOne",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Pet (Optional)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "pet_2",
+          "valueType": "xs:string",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Name",
+              "valueType": "xs:string",
+              "value": "Mystery",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[2].name",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of the Pet"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TypeOfAnimal",
+              "valueType": "xs:string",
+              "value": "Seahorse",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/Cardinality",
+                  "value": "One",
+                  "valueType": "xs:string"
+                },
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "sourceData.pets[2].typeOfAnimal",
+                  "valueType": "xs:string"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Type of Animal"
+                }
+              ]
+            }
+          ],
+          "qualifiers": [
+            {
+              "kind": "TemplateQualifier",
+              "type": "SMT/Cardinality",
+              "value": "ZeroToOne",
+              "valueType": "xs:string"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "One Pet (Optional)"
+            }
+          ]
+        }
+      ],
+      "valueType": "xs:string",
+      "qualifiers": [],
+      "description": [
+        {
+          "language": "en",
+          "text": "Simple list of Pets (Optional)"
+        }
+      ]
+    }
+  ]
+}

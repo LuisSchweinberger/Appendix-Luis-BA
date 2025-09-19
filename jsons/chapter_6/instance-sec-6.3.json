@@ -1,0 +1,236 @@
+{
+  "modelType": "Submodel",
+  "kind": "Instance",
+  "semanticId": {
+    "keys": [
+      {
+        "type": "ConceptDescription",
+        "value": "nestedListExample"
+      }
+    ],
+    "type": "ExternalReference"
+  },
+  "id": "NestedListTemplate_Template_1cf24cf0-ae79-4d5c-a0b3-2bc6bfded4c1",
+  "qualifiers": [
+    {
+      "kind": "ConceptQualifier",
+      "type": "displayName",
+      "value": "NestedListTemplate_2025-09-15T22:36:05",
+      "valueType": "xs:string"
+    }
+  ],
+  "idShort": "NestedListTemplate",
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "contacts",
+      "value": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "qualifiers": [],
+          "idShort": "contact_0",
+          "value": [
+            {
+              "modelType": "Property",
+              "value": "SpongeBob",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "data.contacts[0].name"
+                }
+              ],
+              "idShort": "Name"
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "phoneNumbers",
+              "value": [
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "qualifiers": [],
+                  "idShort": "phoneNumber_0",
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "value": "Office",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[0].phone_numbers[0].name"
+                        }
+                      ],
+                      "idShort": "Name"
+                    },
+                    {
+                      "modelType": "Property",
+                      "value": "+1 234 56789",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[0].phone_numbers[0].value"
+                        }
+                      ],
+                      "idShort": "Value"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "qualifiers": [],
+                  "idShort": "phoneNumber_1",
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "value": "Cell",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[0].phone_numbers[1].name"
+                        }
+                      ],
+                      "idShort": "Name"
+                    },
+                    {
+                      "modelType": "Property",
+                      "value": "+1 1907 1234",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[0].phone_numbers[1].value"
+                        }
+                      ],
+                      "idShort": "Value"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "qualifiers": [],
+          "idShort": "contact_1",
+          "value": [
+            {
+              "modelType": "Property",
+              "value": "Squidward",
+              "qualifiers": [
+                {
+                  "kind": "TemplateQualifier",
+                  "type": "SMT/MappingInfo",
+                  "value": "data.contacts[1].name"
+                }
+              ],
+              "idShort": "Name"
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "phoneNumbers",
+              "value": [
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "qualifiers": [],
+                  "idShort": "phoneNumber_0",
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "value": "Office",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[1].phone_numbers[0].name"
+                        }
+                      ],
+                      "idShort": "Name"
+                    },
+                    {
+                      "modelType": "Property",
+                      "value": "+2 234 56789",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[1].phone_numbers[0].value"
+                        }
+                      ],
+                      "idShort": "Value"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "qualifiers": [],
+                  "idShort": "phoneNumber_1",
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "value": "Home",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[1].phone_numbers[1].name"
+                        }
+                      ],
+                      "idShort": "Name"
+                    },
+                    {
+                      "modelType": "Property",
+                      "value": "+2 69420 187",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[1].phone_numbers[1].value"
+                        }
+                      ],
+                      "idShort": "Value"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "qualifiers": [],
+                  "idShort": "phoneNumber_2",
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "value": "Cell",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[1].phone_numbers[2].name"
+                        }
+                      ],
+                      "idShort": "Name"
+                    },
+                    {
+                      "modelType": "Property",
+                      "value": "+2 1907 1234",
+                      "qualifiers": [
+                        {
+                          "kind": "TemplateQualifier",
+                          "type": "SMT/MappingInfo",
+                          "value": "data.contacts[1].phone_numbers[2].value"
+                        }
+                      ],
+                      "idShort": "Value"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
